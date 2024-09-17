@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim> Opel Konferencia</cim>
+    <hallgatók>
+        <hallgató>
+            <név> Gáz Géza </név>
+            <lakcím> Petőfi u. 21 </lakcím>
+        </hallgató>
+        <hallgató>
+            <név> Vég Béla </név>
+            <lakcím> Balogh utca 12 </lakcím>
+        </hallgató>
+        <hallgató>
+            <név> József Város </név>
+            <lakcím> Alma tér 1. </lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>
+        Galgamácsa Művelődési ház
+    </helyszín>
+    <előadó>
+        <név> Varga Mihály </név>
+        <adószám> 123456789 </adószám>
+        <lakcím> Lakótelep utca 1. </lakcím>
+    </előadó>
+    <dátum> 2024. 09. 17.</dátum>
+</konferencia>

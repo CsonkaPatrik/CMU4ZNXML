@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE kurzusfelvetel SYSTEM "kurzusfelvetel.dtd">
+
+<kurzusfelvetel tanev="2024_2025 I." egyetem="ME">
+  <hallgato id="CMU4ZN.ME">
+    <hnev>Csonka Patrik</hnev>
+    <szulev>2001-10-06</szulev>
+    <szak evf="5"> Programtervező Informatikus </szak>
+  </hallgato>
+
+    <kurzus id="GEIAL315-B">
+      <kurzusnev>Vállalit Információs Rendszerek Fejlesztése</kurzusnev>
+      <kredit>5</kredit>
+      <hely>In. 103</hely>
+      <idopont>Szerda 16:00-20:00</idopont>
+      <oktato>Dr. Sasvári Péter</oktato>
+    </kurzus>
+    
+    <kurzus id="GEIAL332-B" nyelv="angol">
+      <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+      <kredit>5</kredit>
+      <hely>XXXII.</hely>
+      <idopont>Kedd 10:00-13:30</idopont>
+      <oktato>Dr. Bednarik László</oktato>
+      <oraado>Dr. Kovács László</oraado>
+    </kurzus>
+    
+    <kurzus id="GEIAL314-B">
+      <kurzusnev>Mesterséges Intelligencia Alapok</kurzusnev>
+      <kredit>5</kredit>
+      <hely>XXXII.</hely>
+      <idopont>Szerda 10:00-13:30</idopont>
+      <oktato>Fazekas Levente</oktato>
+    </kurzus>
+    
+  </kurzusok>
+</kurzusfelvetel>

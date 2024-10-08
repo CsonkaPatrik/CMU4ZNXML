@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="1 oldal" id="rVcbS3SOHvbKNAruKiKu">
-    <mxGraphModel dx="3920" dy="1733" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1671" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -106,13 +106,12 @@
         <mxCell id="mJlbt22K1hkp6w-ttU3_-42" value="házszám" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="825" y="505" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="mJlbt22K1hkp6w-ttU3_-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJlbt22K1hkp6w-ttU3_-43" target="mJlbt22K1hkp6w-ttU3_-13">
+        <mxCell id="mJlbt22K1hkp6w-ttU3_-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=0;dashed=1;" edge="1" parent="1" source="mJlbt22K1hkp6w-ttU3_-43" target="mJlbt22K1hkp6w-ttU3_-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint y="372.3076923076923" as="targetPoint" />
             <Array as="points">
               <mxPoint x="410" y="800" />
-              <mxPoint x="-320" y="800" />
-              <mxPoint x="-320" y="290" />
+              <mxPoint x="-260" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -188,6 +187,14 @@
         <mxCell id="mJlbt22K1hkp6w-ttU3_-61" value="időtartama" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1520" y="510" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="mJlbt22K1hkp6w-ttU3_-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="mJlbt22K1hkp6w-ttU3_-63" target="mJlbt22K1hkp6w-ttU3_-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1090" y="820" />
+              <mxPoint x="-280" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mJlbt22K1hkp6w-ttU3_-63" value="GYKOD" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1050" y="240" width="80" height="80" as="geometry" />
         </mxCell>
@@ -238,6 +245,16 @@
         </mxCell>
         <mxCell id="mJlbt22K1hkp6w-ttU3_-73" value="Szakács" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1975" y="195" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mJlbt22K1hkp6w-ttU3_-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mJlbt22K1hkp6w-ttU3_-74" target="mJlbt22K1hkp6w-ttU3_-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1759.9799999999996" y="334.9999999999999" as="sourcePoint" />
+            <mxPoint x="-259.97652173913025" y="339.9565217391304" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1760" y="840" />
+              <mxPoint x="-300" y="840" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="mJlbt22K1hkp6w-ttU3_-74" value="SZKOD" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1720" y="245" width="80" height="80" as="geometry" />

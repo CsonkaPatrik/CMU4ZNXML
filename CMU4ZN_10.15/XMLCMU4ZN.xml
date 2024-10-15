@@ -147,7 +147,7 @@
         </cim>
     </vendeg>
 
-    <!-- Rendelések -->
+    <!-- Orders -->
     <rendeles e_v_e="el" e_v_v="v1">
         <osszeg>13000</osszeg>
         <etel>Pizza</etel>

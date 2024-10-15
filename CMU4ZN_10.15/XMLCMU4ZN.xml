@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemaY86I0I.xsd">
+
+    <!-- Restaurants -->
+    <etterem ekod="e1">
+        <nev>Marha Mania</nev>
+        <cim>
+            <varos>Aszod</varos>
+            <utca>Kossuth Lajos</utca>
+            <hazszam>10</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Naga sushi bar</nev>
+        <cim>
+            <varos>Fot</varos>
+            <utca>Fo</utca>
+            <hazszam>121</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem ekod="e3">
+        <nev>Vilfino Pizzeria</nev>
+        <cim>
+            <varos>Aszod</varos>
+            <utca>Kossuth Lajos</utca>
+            <hazszam>54</hazszam>
+        </cim>
+    </etterem>
+
+    <!-- Chefs -->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Bel Geza</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+        <vegzettseg>Gundel szakacskepzo</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Alma Gabor</nev>
+        <eletkor>56</eletkor>
+        <vegzettseg>Egyetem</vegzettseg>
+        <vegzettseg>Miskolci Egyetem</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f3" e_f="e3">
+        <nev>Szilva Anna</nev>
+        <eletkor>21</eletkor>
+        <vegzettseg>Gimnazium</vegzettseg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </foszakacs>
+
+    <!-- Kitchen workers -->
+    <szakacs szkod="sz1" e_sz="e1">
+        <nev>Suto Karoly</nev>
+        <reszleg>Saucier</reszleg>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+        <vegzettseg>La Gordon Blen</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz2" e_sz="e2">
+        <nev>Kis Anna</nev>
+        <reszleg>Toaster</reszleg>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz3" e_sz="e2">
+        <nev>Suto Endre</nev>
+        <reszleg>Fryer</reszleg>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+        <vegzettseg>La Gordon Blen</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz4" e_sz="e3">
+        <nev>Zsoze Atya</nev>
+        <reszleg>Chopper</reszleg>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+    </szakacs>
+
+    <!-- Interns -->
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Csonka Patrik</nev>
+        <gyakorlat>
+            <kezdete>2024.08.26</kezdete>
+            <idotartam>2 honap</idotartam>
+        </gyakorlat>
+        <muszak>Delelott</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Bojan Miron</nev>
+        <gyakorlat>
+            <kezdete>2024.01.20</kezdete>
+            <idotartam>13 honap</idotartam>
+        </gyakorlat>
+        <muszak>Reggel</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy3" e_gy="e3">
+        <nev>Kis Elemer</nev>
+        <gyakorlat>
+            <kezdete>2022.02.01</kezdete>
+            <idotartam>4 ev</idotartam>
+        </gyakorlat>
+        <muszak>Reggel</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy4" e_gy="e1">
+        <nev>Nanasi Szabolcs</nev>
+        <gyakorlat>
+            <kezdete>2024.12.12</kezdete>
+            <idotartam>1 honap</idotartam>
+        </gyakorlat>
+        <muszak>Delutan</muszak>
+    </gyakornok>
+
+    <!-- Guests -->
+
+    <vendeg vkod="v1">
+        <nev>Nagy Etvagyu</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Geza</utca>
+            <hazszam>22</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v2">
+        <nev>Balla Mate</nev>
+        <eletkor>67</eletkor>
+        <cim>
+            <varos>Fot</varos>
+            <utca>Petofi</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v3">
+        <nev>Bodocs Tibor</nev>
+        <eletkor>40</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Nepszinhaz</utca>
+            <hazszam>45</hazszam>
+        </cim>
+    </vendeg>
+
+    <!-- Rendelések -->
+    <rendeles e_v_e="el" e_v_v="v1">
+        <osszeg>13000</osszeg>
+        <etel>Pizza</etel>
+    </rendeles>
+
+     <rendeles e_v_e="el" e_v_v="v2">
+        <osszeg>5000</osszeg>
+        <etel>Hasab</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e2" e_v_v="v3">
+        <osszeg>4000</osszeg>
+        <etel>Gulyas leves</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e3" e_v_v="v3">
+        <osszeg>8000</osszeg>
+        <etel>Finomfozelek</etel>
+    </rendeles>
+
+</vendeglatas>

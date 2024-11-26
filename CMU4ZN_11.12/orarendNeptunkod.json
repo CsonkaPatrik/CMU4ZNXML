@@ -1,0 +1,85 @@
+
+{
+    "orarend": {
+        "ora": [
+            {
+                "targy": "Adatkezelés XML-ben",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező Informatikus",
+                "_id": "1",
+                "_tipus": "elmelet"
+            },
+            {
+                "targy": "Adatkezelés XML-ben",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "12:00",
+                    "ig": "14:00"
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "Dr. Bednarik László",
+                "szak": "Programtervező Informatikus",
+                "_id": "2",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Mesterséges intelligencia",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "helyszin": "X. Előadó",
+                "oktato": "Fazekas Levente",
+                "szak": "Programtervező Informatikus",
+                "_id": "3",
+                "_tipus": "elmelet"
+            },
+            {
+                "targy": "Vállalati információs rendszerek",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "14:00",
+                    "ig": "16:00"
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "Dr.Sasvári Péter",
+                "szak": "Programtervező Informatikus",
+                "_id": "4",
+                "_tipus": "elmelet"
+            },
+            {
+                "targy": "Mesterséges intelligencia",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "16:00",
+                    "ig": "18:00"
+                },
+                "helyszin": "XXXIV. Előadó",
+                "oktato": "Kunné Dr.Tamás Judit",
+                "szak": "Programtervező Informatikus",
+                "_id": "5",
+                "_tipus": "gyakorlat"
+            },
+            {
+                "targy": "Vállalati információs rendszerek",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "18:00",
+                    "ig": "20:00"
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "Dr.Sasvári Péter",
+                "szak": "Programtervező Informatikus",
+                "_id": "6",
+                "_tipus": "gyakorlat"
+            }
+        ]
+    }
+}

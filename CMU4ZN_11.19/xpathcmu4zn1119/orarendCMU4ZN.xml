@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orarend>
+    <ora id="1" tipus="elmelet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>Inf. 103</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    <ora id="3" tipus="elmelet">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>X. Előadó</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+</orarend>

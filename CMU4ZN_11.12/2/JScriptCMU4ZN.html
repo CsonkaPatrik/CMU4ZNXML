@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptun Órarend</title>
+</head>
+<body>
+    <h1>Neptunkod Órarend 2024</h1>
+    <div id="output"></div>
+
+    <script>
+        const orarend = {
+            "orarend": {
+                "ora": [
+                    {
+                        "targy": "Adatkezelés XML-ben",
+                        "idopont": {
+                            "nap": "Kedd",
+                            "tol": "10:00",
+                            "ig": "12:00"
+                        },
+                        "helyszin": "Inf. 103",
+                        "oktato": "Dr. Bednarik László",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "1",
+                        "_tipus": "elmelet"
+                    },
+                    {
+                        "targy": "Adatkezelés XML-ben",
+                        "idopont": {
+                            "nap": "Kedd",
+                            "tol": "12:00",
+                            "ig": "14:00"
+                        },
+                        "helyszin": "Inf. 103",
+                        "oktato": "Dr. Bednarik László",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "2",
+                        "_tipus": "gyakorlat"
+                    },
+                    {
+                        "targy": "Mesterséges intelligencia",
+                        "idopont": {
+                            "nap": "Szerda",
+                            "tol": "10:00",
+                            "ig": "12:00"
+                        },
+                        "helyszin": "X. Előadó",
+                        "oktato": "Fazekas Levente",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "3",
+                        "_tipus": "elmelet"
+                    },
+                    {
+                        "targy": "Vállalati információs rendszerek",
+                        "idopont": {
+                            "nap": "Szerda",
+                            "tol": "14:00",
+                            "ig": "16:00"
+                        },
+                        "helyszin": "Inf. 103",
+                        "oktato": "Dr.Sasvári Péter",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "4",
+                        "_tipus": "elmelet"
+                    },
+                    {
+                        "targy": "Mesterséges intelligencia",
+                        "idopont": {
+                            "nap": "Szerda",
+                            "tol": "16:00",
+                            "ig": "18:00"
+                        },
+                        "helyszin": "XXXIV. Előadó",
+                        "oktato": "Kunné Dr.Tamás Judit",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "5",
+                        "_tipus": "gyakorlat"
+                    },
+                    {
+                        "targy": "Vállalati információs rendszerek",
+                        "idopont": {
+                            "nap": "Szerda",
+                            "tol": "18:00",
+                            "ig": "20:00"
+                        },
+                        "helyszin": "Inf. 103",
+                        "oktato": "Dr.Sasvári Péter",
+                        "szak": "Programtervező Informatikus",
+                        "_id": "6",
+                        "_tipus": "gyakorlat"
+                    }
+                ]
+            }
+        };
+
+        const outputDiv = document.getElementById("output");
+        orarend.orarend.ora.forEach(ora => {
+            const oraDiv = document.createElement("div");
+            oraDiv.innerHTML = `
+                <p><strong>Tárgy:</strong> ${ora.targy}</p>
+                <p><strong>Helyszín:</strong> ${ora.helyszin}</p>
+                <p><strong>Oktató:</strong> ${ora.oktato}</p>
+                <p><strong>Szak:</strong> ${ora.szak}</p>
+                <hr>
+            `;
+            outputDiv.appendChild(oraDiv);
+        });
+    </script>
+</body>
+</html>

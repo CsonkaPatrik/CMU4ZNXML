@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:simpleType name="tanevTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}/[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="egyetemTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ME"/>
+
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="hallgatoTipus">
+        <xs:sequence>
+            <xs:element name="hnev" type="xs:string"/>
+            <xs:element name="szulev" type="szulevTipus"/>
+            <xs:element name="szak" type="szakTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="szulevTipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1900"/>
+            <xs:maxInclusive value="2023"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="szakTipus">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="evf" type="xs:integer" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="kurzusTipus">
+        <xs:sequence>
+            <xs:element name="kurzusnev" type="xs:string"/>
+            <xs:element name="kredit" type="xs:integer"/>
+            <xs:element name="hely" type="xs:string"/>
+            <xs:element name="idopont" type="xs:string"/>
+            <xs:element name="oktato" type="xs:string" minOccurs="0"/>
+            <xs:element name="oraado" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="jovahagyas" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="kurzusokTipus">
+        <xs:sequence>
+            <xs:element name="kurzus" type="kurzusTipus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CMU4ZN_kurzusfelvetelTipus">
+        <xs:sequence>
+            <xs:element name="hallgato" type="hallgatoTipus"/>
+            <xs:element name="kurzusok" type="kurzusokTipus"/>
+        </xs:sequence>
+        <xs:attribute name="tanev" type="tanevTipus" use="required"/>
+        <xs:attribute name="egyetem" type="egyetemTipus" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="CMU4ZN_kurzusfelvetel" type="CMU4ZN_kurzusfelvetelTipus"/>
+
+</xs:schema>

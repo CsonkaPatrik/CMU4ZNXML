@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element -->
+    <xs:element name="CMU4ZN_Resaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="username" type="xs:string"/>
+                            <xs:element name="password" type="xs:string"/>
+                            <xs:element name="nickname" type="xs:string"/>
+                            <xs:element name="adress">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="city" type="xs:string"/>
+                                        <xs:element name="street" type="xs:string"/>
+                                        <xs:element name="zip_code" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="customer_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:key name="CustomerPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@customer_id"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="order" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="order_number" type="xs:integer"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                            <xs:element name="quantity" type="xs:integer"/>
+                            <xs:element name="note" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="order_id" type="xs:string" use="required"/>
+                        <xs:attribute name="customer_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:key name="OrderPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@order_id"/>
+                    </xs:key>
+                    <xs:keyref name="OrderCustomerForeignKey" refer="CustomerPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@customer_id"/>
+                    </xs:keyref>
+                </xs:element>
+
+                <xs:element name="employee" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="username" type="xs:string"/>
+                            <xs:element name="password" type="xs:string"/>
+                            <xs:element name="experience" type="xs:integer"/>
+                            <xs:element name="nickname" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="employee_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:key name="EmployeePrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@employee_id"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="order_handling" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="time" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="order_id" type="xs:string" use="required"/>
+                        <xs:attribute name="employee_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:keyref name="OrderHandlingOrderForeignKey" refer="OrderPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@order_id"/>
+                    </xs:keyref>
+                    <xs:keyref name="OrderHandlingEmployeeForeignKey" refer="EmployeePrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@employee_id"/>
+                    </xs:keyref>
+                </xs:element>
+
+                <xs:element name="pizza" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                            <xs:element name="topping" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:attribute name="pizza_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:key name="PizzaPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@pizza_id"/>
+                    </xs:key>
+                </xs:element>
+
+                <xs:element name="ingredients" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                            <xs:element name="origin" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="ingredients_id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                    <xs:key name="IngredientsPrimaryKey">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@ingredients_id"/>
+                    </xs:key>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

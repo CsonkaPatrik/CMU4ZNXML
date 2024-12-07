@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><orarend><ora id="1" tipus="elmelet"><targy>Adatkezelés XML-ben</targy><idopont>Kedd 
+             10:00 
+             12:00</idopont><helyszin>Inf. 103</helyszin><oktato>Dr. Bednarik László</oktato><szak>Programtervező Informatikus</szak></ora><ora id="2" tipus="gyakorlat"><targy>Adatkezelés XML-ben</targy><idopont>Kedd 
+             12:00 
+             14:00</idopont><helyszin>Inf. 103</helyszin><oktato>Dr. Bednarik László</oktato><szak>Programtervező Informatikus</szak></ora><ora id="3" tipus="elmelet"><targy>Mesterséges intelligencia</targy><idopont>Szerda 
+             10:00 
+             12:00</idopont><helyszin>X. Előadó</helyszin><oktato>Fazekas Levente</oktato><szak>Programtervező Informatikus</szak></ora><ora id="4" tipus="elmelet"><targy>Vállalati információs rendszerek</targy><idopont>Szerda 
+             14:00 
+             16:00</idopont><helyszin>Inf. 103</helyszin><oktato>Dr.Sasvári Péter</oktato><szak>Programtervező Informatikus</szak></ora><ora id="5" tipus="gyakorlat"><targy>Mesterséges intelligencia</targy><idopont>Szerda 
+             16:00 
+             18:00</idopont><helyszin>XXXIV. Előadó</helyszin><oktato>Kunné Dr.Tamás Judit</oktato><szak>Programtervező Informatikus</szak></ora><ora id="6" tipus="gyakorlat"><targy>Vállalati információs rendszerek</targy><idopont>Szerda 
+             18:00 
+             20:00</idopont><helyszin>Inf. 103</helyszin><oktato>Dr.Sasvári Péter</oktato><szak>Programtervező Informatikus</szak></ora></orarend>

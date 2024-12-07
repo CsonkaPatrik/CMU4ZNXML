@@ -1,4 +1,4 @@
-package neptunkod1112;
+package CMU4ZN1112;
 
 import org.everit.json.schema.*;
 import org.everit.json.schema.loader.SchemaLoader;
@@ -10,12 +10,12 @@ public class JSONValidateNeptunkod {
     public static void main(String[] args) {
         try {
             // Load JSON schema
-            String schemaContent = new String(Files.readAllBytes(Paths.get("orarendNeptunkodSchema.json")));
+            String schemaContent = new String(Files.readAllBytes(Paths.get("orarendCMU4ZNSchema.json")));
             JSONObject jsonSchema = new JSONObject(schemaContent);
             Schema schema = SchemaLoader.load(jsonSchema);
 
             // Load JSON document
-            String jsonContent = new String(Files.readAllBytes(Paths.get("orarendNeptunkod.json")));
+            String jsonContent = new String(Files.readAllBytes(Paths.get("orarendCMU4ZN.json")));
             JSONObject jsonObject = new JSONObject(jsonContent);
 
             // Validate JSON document against schema

@@ -1,4 +1,4 @@
-package neptunkod1112;
+package CMU4ZN1112;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -10,7 +10,7 @@ public class JSONWriteNeptunkod {
     public static void main(String[] args) {
         try {
             // Read the JSON file
-            String content = new String(Files.readAllBytes(Paths.get("orarendNeptunkod.json")));
+            String content = new String(Files.readAllBytes(Paths.get("orarendCMU4ZN.json")));
             JSONObject jsonObj = new JSONObject(content);
 
             // Print JSON in block format

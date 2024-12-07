@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMU4ZN_Resaurant>
+    <customer customer_id="01">
+        <username>Pekseg</username>
+        <password>alma123</password>
+        <nickname>Pek</nickname>
+        <adress>
+            <city>Galgamácsa</city>
+            <street>Petőfi Utca 27.</street>
+            <zip_code>2183</zip_code>
+        </adress>
+    </customer>
+    <pizza pizza_id="01">
+        <name>Diablo</name>
+        <price>2000</price>
+        <topping>Szalámi</topping>
+        <topping>Habanero Paprika</topping>
+        <topping>Mozzarella sajt</topping>
+    </pizza>
+</CMU4ZN_Resaurant>

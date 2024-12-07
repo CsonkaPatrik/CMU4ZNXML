@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><CMU4ZN_Resaurant xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaCMU4ZN.xsd">
+
+    <!--Customer instances-->
+
+    <customer customer_id="01">
+        <username>Pekseg</username>
+        <password>alma123</password>
+        <nickname>Pek</nickname>
+        <adress>
+            <city>Galgamácsa</city>
+            <street>Petőfi Utca 27.</street>
+            <zip_code>2183</zip_code>
+        </adress>
+    </customer>
+
+    <customer customer_id="02">
+        <username>ujfelhasznalonev</username>
+        <password>helokapistike</password>
+        <nickname>pityesz</nickname>
+        <adress>
+            <city>Veresegyház</city>
+            <street>Kálvin tér 7.</street>
+            <zip_code>2112</zip_code>
+        </adress>
+    </customer>
+
+    <customer customer_id="03">
+        <username>eliza1212</username>
+        <password>liza2000</password>
+        <nickname>lizi</nickname>
+        <adress>
+            <city>Aszód</city>
+            <street>Falujárók útja 5.</street>
+            <zip_code>2170</zip_code>
+        </adress>
+    </customer>
+
+    <!--Orders instances-->
+
+    <order customer_id="02" order_id="01">
+        <order_number>12</order_number>
+        <price>12000</price>
+        <quantity>2</quantity>
+        <note>Légyszi ne rakjatok rá sajtot</note>
+    </order>
+
+    <order customer_id="01" order_id="02">
+        <order_number>15</order_number>
+        <price>3000</price>
+        <quantity>1</quantity>
+        <note>Frissítve: mégse csípősen kérem!</note>
+    </order>
+
+    <order customer_id="03" order_id="03">
+        <order_number>20</order_number>
+        <price>30000</price>
+        <quantity>10</quantity>
+        <note>Holnap DU 3-ra kérem</note>
+    </order>
+
+    <!--Employee instances-->
+
+    <employee employee_id="01">
+        <username>Kiskakas</username>
+        <password>utalomafonokom</password>
+        <experience>2</experience>
+        <nickname>nagykakas</nickname>
+    </employee>
+
+    <employee employee_id="02">
+        <username>KisBéla</username>
+        <password>szeretemafonokom</password>
+        <experience>10</experience>
+        <nickname>Béci</nickname>
+    </employee>
+    
+    <employee employee_id="03">
+        <username>HorváthDeborah</username>
+        <password>debike902</password>
+        <experience>5</experience>
+        <nickname>Debi</nickname>
+    </employee>
+
+    <!--Order handling switchboard instances-->
+
+    <order_handling employee_id="02" order_id="01">
+        <time>17:45</time>
+    </order_handling>
+
+     <order_handling employee_id="01" order_id="02">
+        <time>17:20</time>
+    </order_handling>
+
+     <order_handling employee_id="03" order_id="03">
+        <time>18:00</time>
+    </order_handling>
+
+    <!--Pizza instances-->
+
+    <pizza pizza_id="01">
+        <name>Diablo</name>
+        <price>2500</price>
+        <topping>Szalámi</topping>
+        <topping>Habanero Paprika</topping>
+        <topping>Mozzarella sajt</topping>
+    </pizza>
+
+    <pizza pizza_id="02">
+        <name>SonGoKu</name>
+        <price>1800</price>
+        <topping>Sonka</topping>
+        <topping>Gomba</topping>
+        <topping>Kukorica</topping>
+    <topping>Extra sajt</topping></pizza>
+
+    <pizza pizza_id="03">
+        <name>Margareta</name>
+        <price>1000</price>
+        <topping>Paradicsomszósz</topping>
+        <topping>Bazsalikom</topping>
+        <topping>Mozzarella sajt</topping>
+    </pizza>
+
+    <!--Ingredients instances-->
+
+    <ingredients ingredients_id="01">
+        <name>Paradicsom</name>
+        <price>100</price>
+        <origin>Magyarország</origin>
+    </ingredients>
+
+    <ingredients ingredients_id="02">
+        <name>Sonka</name>
+        <price>200</price>
+        <origin>Olaszország</origin>
+    </ingredients>
+
+    <ingredients ingredients_id="03">
+        <name>Sajt</name>
+        <price>500</price>
+        <origin>Olaszország</origin>
+    </ingredients>
+
+</CMU4ZN_Resaurant>
